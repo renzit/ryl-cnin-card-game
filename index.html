@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Royal Canin Juego de Memoria</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,500,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h2><img src="images/rc-crown-84x43.png" alt="Royal Canin logo">Juego de Memoria</h2>
+  </header>
+  <div id="gameBoard">
+    <div class="menu">
+      <h2>Elegí <br>Dificultad</h2>
+      <button class="alt-button new">Registro</button>
+      <!--<button id="0" class="button">test</button>-->
+      <button id="1" class="button">Pequeño</button>
+      <button id="2" class="button">Medio</button>
+      <button id="3" class="button">Largo</button>
+      <button id="4" class="button">Super Largo</button>
+    </div>
+    <div class="scoreBoard">
+      <h1> Tiempo: 01:10</h1>
+      <div class="times">
+        <table>
+          <tr>
+            <td class= "title">Puntajes Recientes</td>
+          </tr>
+          <tr>
+            <td class = "slot">0</td>
+          </tr>
+          <tr>
+            <td class = "slot">0</td>
+          </tr>
+          <tr>
+            <td class = "slot">0</td>
+          </tr>
+          <tr>
+            <td class = "slot">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="rules intro">
+    <div class="registro">
+      <h2>Bienvenido</h2>
+      <p>Te mostramos productos que Royal Canin tiene para ofrecer. Probá tus habilidades con este juego de memoria  y podrás ganar interesantes premios.</p>
+
+      <h2>Instrucciones</h2>
+      <ul>
+        <li>Elegí la dificultad</li>
+        <li>Clickea en 2 cuadrados para revelar su contenido y si son iguales generás un acierto.</li>
+        <li>Si hay un acierto los cuadrados permancen revelados.</li>
+        <li>Encontrá todos los pares en la tabla para ganar.</li>
+      </ul>
+      <h2>Registro</h2>
+        <input type="text" id="veterinary" placeholder="¿Veterinaria?"/>
+        <input type="text" id="name" placeholder="¿Tu nombre?"/>
+        <input type="text" id="email" placeholder="nombre@email.com"/>
+      </ul>
+
+      <button id="1" class="start new">Comenzar</button>
+    </div>
+    </div>
+    <div class="results rules">
+    <div class="resultado">
+      <h2>Gracias por jugar</h2>
+      <div class="stats">
+        <div class="left">
+          <h2>Descubri tu premio según la cantidad de pares acertados:</h2>
+          <h3 class="stat-time"></h3>
+          <button id="1" class="start again">Nuevo juego</button>
+        </div>
+        <div class="right">
+        </div>
+      </div>
+    </div>
+    </div>
+    <table class="main"></table>
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')</script> -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  margin-top: 10px;
+  font-family: "Raleway";
+  font-size: 50px;
+}
+
+header img {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 25px;
+  left: 15px;
+  display:none;
+}
+
+h1,h2{
+  color: #fff;
+}
+
+table.main{
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  top: -500px;
+  box-shadow: 0px 5px 10px;
+}
+
+table.main tbody{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+td {
+  height: 180px;
+  width: 180px;
+  margin: 0;
+  padding: 20px;
+  background: white no-repeat url(../images/rc-crown02-01.png) center;
+  background-size:80%;
+  transition: all 0.5s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+
+}
+
+td:hover {
+ -moz-box-shadow:    inset 0 0 10px #fff;
+ -webkit-box-shadow: inset 0 0 10px #fff;
+ box-shadow:         inset 0 0 10px #fff;
+}
+
+.flipped {
+  background-color: #fff;
+  background-size:80%;
+  transform: rotateY( -180deg );
+}
+
+.menu {
+  display: none;
+  margin-left: 20px;
+  padding: 20px 0;
+}
+
+
+.button, .alt-button {
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+#gameBoard {
+  max-height: 500px;
+}
+
+.scoreBoard {
+  display: none;
+  position: absolute;
+  top: 145px;
+  right: 0;
+  float: right;
+  margin-right: 50px;
+}
+
+.scoreBoard h1 {
+  text-align:center;
+  font-size: 43px;
+  margin-bottom: 5px;
+}
+
+div.times > table {
+  margin: 0;
+  display:inline-block;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  box-shadow: none;
+}
+
+div.times  td {
+  height: 75px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  border: 3px solid #A36024;
+  box-shadow: none;
+  background: none;
+}
+
+.title {
+  font-family: 'Raleway';
+}
+
+.rules {
+  text-shadow: 0px 1px 4px #000;
+  margin: 0 auto;
+  position: absolute;
+  top: 18%;
+  background: url(../images/Royal-Canin-friends.jpg) no-repeat right;
+  background-size: contain;
+  background-color: white;
+  box-shadow: 0px 3px 20px #000;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 21px;
+  border-radius: 20px;
+  width: 98%;
+  height: 100%
+  left:1%;
+}
+
+.rules:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50,50,50,0.5);
+    opacity: .6;
+}
+
+.rules input {
+
+  width: 30%;
+  display:block;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #FFF;
+  border: 2px solid #FFF;
+  margin-bottom: 25px;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+
+input, input:focus, input:focus {
+    color:$eee;
+}
+
+.rules h2 {
+  font-family: "Raleway";
+  color: #fff
+}
+
+.rules .resultado h2 {
+  text-align: center;
+}
+.registro, .resultado{
+position:relative;
+}
+
+.start {
+  position:relative;
+  left:40%;
+}
+
+.start, .button, .alt-button {
+  cursor: pointer;
+  padding:15px;
+	width:150px;
+  margin: 15px 0px;
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  transition: margin-top 0.3s ease,
+				margin-left 0.3s ease,
+				box-shadow 0.3s ease;
+
+	background:#F44336;
+	border: solid 1px #7F0913;
+
+  	box-shadow: 1px 0px 0px #7F0913,0px 1px 0px #7F0913,
+  				2px 1px 0px #7F0913,1px 2px 0px #7F0913,
+  				3px 2px 0px #7F0913,2px 3px 0px #7F0913,
+  				4px 3px 0px #7F0913,3px 4px 0px #7F0913,
+  				5px 4px 0px #7F0913,4px 5px 0px #7F0913,
+  				6px 5px 0px #7F0913,5px 6px 0px #7F0913,
+  				7px 6px 0px #7F0913,6px 7px 0px #7F0913,
+  				8px 7px 0px #7F0913,7px 8px 0px #7F0913,
+  				9px 8px 0px #7F0913,8px 9px 0px #7F0913;
+	}
+
+.start:active, .button:active, .alt-button:active {
+  transition: margin-top 0.3s ease,
+        margin-left 0.3s ease,
+        box-shadow 0.3s ease;
+
+  margin-left:-10px;
+  margin-top:10px;
+
+  box-shadow: 0px 0px 0px #7F0913;
+}
+
+.results {
+  display: none;
+}
+
+.results > h2 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+
+.stats {
+  padding-top: 35px;
+}
+
+#crown {
+  position:relative;
+  left: 25px;
+  bottom: 15px;
+  width: 125px;
+}
+
+#crowni {
+  width:33px;
+}
+
+.left .start, .right .start {
+  margin: 0;
+  left: auto;
+}
+
+.left h2, .right h2{
+  margin: 0 0 15px 0;
+  font-size: 35px;
+}
+
+.left img {
+}
+.left {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #fff;
+  padding-left: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  text-align: center;
+  border-left: 1px solid #fff;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+.stat-time {
+  font-size: 138px;
+  font-family: "Raleway";
+  margin: 28px 0 20px 0;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+#download {
+  cursor: default;
+}
+.start a {
+  text-decoration: none;
+  text-shadow: none;
+  color: #fff;
+}
+
+.left .msg {
+  color: #fff;
+  margin: 46px 0;
+}
+
+.alt-button {
+  background:#fff;
+  color: #dd1021;
+}
+
+footer {
+  position:absolute;
+	bottom:0;
+	left:0;
+  width:100%;
+  text-align: center;
+}
+
+.icons {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.copy {
+  margin-bottom: 5px;
+}
+
